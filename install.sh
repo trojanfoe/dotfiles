@@ -3,18 +3,21 @@
 thisdir=$(realpath $(dirname $0))
 sys=$(uname -s)
 
-config_dirs="nvim"
-if [[ $sys = Darwin ]]; then
-  config_dirs="${config_dirs} kitty"
-
-fi
+# Replace the entire directort
+config_dirs="nvim kitty"
 for d in $config_dirs; do
   dest=~/.config/$d
-  if ! test -h $dest; then
+  if test -d $dest; then
     rm -rf $dest
   fi
   ln -sf $thisdir/config/$d $dest
 done
+
+# Replace the specified files in a directory
+if [[ $sys == Darwin ]]; then
+    mkdir -p ~/.config/zed
+    ln -sf $thisdir/config/zed/settings.json ~/.config/zed
+fi
 
 ln -sf $thisdir/zprofile ~/.zprofile
 ln -sf $thisdir/zshrc ~/.zshrc

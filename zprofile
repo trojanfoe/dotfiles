@@ -37,22 +37,23 @@ if [[ $sys == Darwin ]]; then
   export PATH="$pip3_user_dir:$PATH"
   unset pip3_user_dir
 
+  export VISUAL=zed
+  export EDITOR=$VISUAL
+
 elif [[ $sys == Linux ]]; then
   #
   # Linux
   #
+
+  export VISUAL=nvim
+  export EDITOR=$VISUAL
 
   alias fd=fdfind
 
   eval $(keychain --eval id_github_trojanfoe)
 fi
 
-export VISUAL=nvim
-export EDITOR=$VISUAL
-
 alias lg=lazygit
 
 # Remove dupes
 typeset -U PATH
-
-
