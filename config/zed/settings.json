@@ -10,11 +10,11 @@
   "assistant": {
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-3-5-sonnet-20240620"
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2"
   },
-  "ui_font_family": "SF Compact",
+  "ui_font_family": "Geneva",
   "ui_font_size": 14,
   "buffer_font_family": "Hack Nerd Font",
   "buffer_font_size": 12,
