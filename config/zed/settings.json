@@ -35,6 +35,9 @@
       "initialization_options": {
         "check": {
           "command": "clippy"
+        },
+        "cfg": {
+          "setTest": true
         }
       }
     }
