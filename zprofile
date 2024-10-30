@@ -8,9 +8,6 @@ do
   fi
 done
 
-. "$HOME/.cargo/env"
-
-
 if [[ $sys == Darwin ]]; then
   #
   # macOS
@@ -57,3 +54,9 @@ alias lg=lazygit
 
 # Remove dupes
 typeset -U PATH
+
+# Rust
+. "$HOME/.cargo/env"
+
+# Golang
+go env -w GOPATH=$HOME/.local/go
