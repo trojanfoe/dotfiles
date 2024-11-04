@@ -7,6 +7,18 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "ssh_connections": [
+    {
+      "host": "linuxbox",
+      "projects": [
+        {
+          "paths": [
+            "/opt/EtsyStore"
+          ]
+        }
+      ]
+    }
+  ],
   "assistant": {
     "default_model": {
       "provider": "anthropic",
