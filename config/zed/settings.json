@@ -7,18 +7,6 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
-  "ssh_connections": [
-    {
-      "host": "linuxbox",
-      "projects": [
-        {
-          "paths": [
-            "/opt/EtsyStore"
-          ]
-        }
-      ]
-    }
-  ],
   "assistant": {
     "default_model": {
       "provider": "anthropic",
@@ -26,18 +14,8 @@
     },
     "version": "2"
   },
-  "ui_font_family": "Lucida Grande",
-  "ui_font_size": 14,
   "buffer_font_family": "Hack Nerd Font Mono",
   "buffer_font_size": 12,
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Xcode Classic Dark"
-  },
-  "project_panel": {
-    "indent_size": 16
-  },
   "git": {
     "git_gutter": "tracked_files",
     "inline_blame": { "enabled": false }
@@ -53,5 +31,26 @@
         }
       }
     }
-  }
+  },
+  "project_panel": {
+    "indent_size": 16
+  },
+  "restore_on_startup": "none",
+  "ssh_connections": [
+    {
+      "host": "linuxbox",
+      "projects": [
+        {
+          "paths": ["/opt/EtsyStore"]
+        }
+      ]
+    }
+  ],
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Xcode Classic Dark"
+  },
+  "ui_font_family": "Lucida Grande",
+  "ui_font_size": 14
 }
