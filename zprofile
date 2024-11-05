@@ -1,7 +1,7 @@
 
 sys=$(uname -s)
 
-for d in $HOME/bin $HOME/.local/bin $HOME/.cargo/bin /opt/EtsyStore/bin
+for d in $HOME/bin $HOME/.local/bin $HOME/.local/zig $HOME/.cargo/bin /opt/EtsyStore/bin
 do
   if test -d $d; then
     PATH=$d:$PATH
