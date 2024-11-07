@@ -1,7 +1,7 @@
 
 sys=$(uname -s)
 
-for d in $HOME/bin $HOME/.local/bin $HOME/.night.zig/latest $HOME/.night.zig/nz $HOME/.cargo/bin /opt/EtsyStore/bin
+for d in $HOME/bin $HOME/.local/bin $HOME/.cargo/bin /opt/EtsyStore/bin
 do
   if test -d $d; then
     PATH=$d:$PATH
@@ -57,6 +57,3 @@ typeset -U PATH
 
 # Rust
 . "$HOME/.cargo/env"
-
-# Golang
-go env -w GOPATH=$HOME/.local/go
