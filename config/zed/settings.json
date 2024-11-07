@@ -14,8 +14,11 @@
     },
     "version": "2"
   },
-  "buffer_font_family": "Hack Nerd Font Mono",
+  "buffer_font_family": "FiraCode Nerd Font",
   "buffer_font_size": 12,
+  "buffer_font_features": {
+    "calt": true
+  },
   "git": {
     "git_gutter": "tracked_files",
     "inline_blame": { "enabled": false }
@@ -49,7 +52,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Xcode Classic Dark"
+    "dark": "Ayu Mirage"
   },
   "ui_font_family": "Lucida Grande",
   "ui_font_size": 14
