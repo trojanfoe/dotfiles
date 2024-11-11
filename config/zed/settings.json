@@ -19,6 +19,7 @@
   "buffer_font_features": {
     "calt": true
   },
+  "format_on_save": "on",
   "git": {
     "git_gutter": "tracked_files",
     "inline_blame": { "enabled": false }
@@ -52,7 +53,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Mirage"
+    "dark": "Visual Assist Dark"
   },
   "ui_font_family": "Lucida Grande",
   "ui_font_size": 14
