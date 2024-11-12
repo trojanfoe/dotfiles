@@ -26,10 +26,6 @@ if [[ $sys == Darwin ]]; then
     export PATH="$JAVA_HOME/bin:$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH"
   fi
 
-  if test -d "/Applications/VirtualBuddy.app"; then
-    export TARGET=14_6_1
-  fi
-
   pip3_user_dir=$(python3 -c "import site; print(site.USER_BASE)")
   export PATH="$pip3_user_dir:$PATH"
   unset pip3_user_dir
@@ -57,3 +53,7 @@ typeset -U PATH
 
 # Rust
 . "$HOME/.cargo/env"
+
+if test -f $HOME/.zprofile.local; then
+    source $HOME/.zprofile.local
+fi
