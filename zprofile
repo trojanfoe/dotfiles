@@ -54,6 +54,9 @@ typeset -U PATH
 # Rust
 . "$HOME/.cargo/env"
 
+# Golang
+go env -w GOPATH=$HOME/.local/go
+
 if test -f $HOME/.zprofile.local; then
     source $HOME/.zprofile.local
 fi
