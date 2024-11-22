@@ -48,7 +48,14 @@
       "host": "linuxbox",
       "projects": [
         {
-          "paths": ["/opt/EtsyStore"]
+          "paths": [
+            "/opt/EtsyStore"
+          ]
+        },
+        {
+          "paths": [
+            "~/source/golang/learning_go/ch4"
+          ]
         }
       ]
     }
