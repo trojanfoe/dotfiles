@@ -33,17 +33,23 @@ if [[ $sys == Darwin ]]; then
   export VISUAL=zed
   export EDITOR=$VISUAL
 
-elif [[ $sys == Linux ]]; then
+elif [[ $sys == Linux || $sys == FreeBSD ]]; then
   #
-  # Linux
+  # Linux or FreeBSD
   #
 
   export VISUAL=nvim
   export EDITOR=$VISUAL
 
-  alias fd=fdfind
-
   eval $(keychain --eval id_github_trojanfoe)
+fi
+
+if [[ $sys == Linux ]]; then
+  #
+  # Linux
+  #
+
+  alias fd=fdfind
 fi
 
 alias lg=lazygit
@@ -52,7 +58,9 @@ alias lg=lazygit
 typeset -U PATH
 
 # Rust
-. "$HOME/.cargo/env"
+if test -d $HOME/.cargo; then
+  . "$HOME/.cargo/env"
+fi
 
 # Golang
 go env -w GOPATH=$HOME/.local/go
