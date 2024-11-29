@@ -16,7 +16,7 @@ for d in $config_dirs; do
 done
 
 # Replace the specified files in a directory
-if [ $sys == Darwin ]; then
+if [ "$sys" = "Darwin" ]; then
     mkdir -p ~/.config/zed
     ln -sf $thisdir/config/zed/settings.json ~/.config/zed
 fi
