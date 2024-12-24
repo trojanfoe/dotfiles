@@ -54,17 +54,24 @@ fi
 
 alias lg=lazygit
 
-# Remove dupes
-typeset -U PATH
-
 # Rust
 if test -d $HOME/.cargo; then
   . "$HOME/.cargo/env"
 fi
 
+# Zig (via nightzig)
+if test -d $HOME/.night.zig/nz; then
+  export PATH=$HOME/.night.zig/nz:$HOME/.night.zig/latest:$PATH
+fi
+
 # Golang
-go env -w GOPATH=$HOME/.local/go
+if test -f $HOME/.local/go; then
+  go env -w GOPATH=$HOME/.local/go
+fi
 
 if test -f $HOME/.zprofile.local; then
     source $HOME/.zprofile.local
 fi
+
+# Remove dupes
+typeset -U PATH

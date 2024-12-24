@@ -14,10 +14,11 @@
     },
     "version": "2"
   },
-  "buffer_font_family": "Hack Nerd Font",
+  "buffer_font_family": "MonoLisa",
   "buffer_font_size": 12,
   "buffer_font_features": {
-    "calt": true
+    "calt": false,
+    "liga": false
   },
   "format_on_save": "on",
   "git": {
@@ -48,14 +49,10 @@
       "host": "linuxbox",
       "projects": [
         {
-          "paths": [
-            "/opt/EtsyStore"
-          ]
+          "paths": ["/opt/EtsyStore"]
         },
         {
-          "paths": [
-            "~/source/golang/learning_go/ch4"
-          ]
+          "paths": ["~/source/golang/learning_go/ch4"]
         }
       ]
     }
