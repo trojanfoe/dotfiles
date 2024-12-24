@@ -21,8 +21,8 @@
     "liga": false
   },
   "terminal": {
-    "font_family": "Hack Nerd Font Mono",
-    "font_size": 11
+    "font_family": "FiraCode Nerd Font Mono",
+    "font_size": 11.5
   },
   "format_on_save": "on",
   "git": {
