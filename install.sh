@@ -18,7 +18,9 @@ done
 # Replace the specified files in a directory
 if [ "$sys" = "Darwin" ]; then
     mkdir -p ~/.config/zed
-    ln -sf $thisdir/config/zed/settings.json ~/.config/zed
+    for f in settings.json keymap.json; do
+        ln -sf $thisdir/config/zed/$f ~/.config/zed/$f
+    done
 fi
 
 ln -sf $thisdir/zprofile ~/.zprofile

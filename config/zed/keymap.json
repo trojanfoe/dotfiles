@@ -1,0 +1,8 @@
+[
+  {
+    "bindings": {
+      "cmd-i": "copilot::Suggest",
+      "cmd-]": "copilot::NextSuggestion"
+    }
+  }
+]
