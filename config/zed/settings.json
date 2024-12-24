@@ -20,6 +20,10 @@
     "calt": false,
     "liga": false
   },
+  "terminal": {
+    "font_family": "Hack Nerd Font Mono",
+    "font_size": 11
+  },
   "format_on_save": "on",
   "git": {
     "git_gutter": "tracked_files",
