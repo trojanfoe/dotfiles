@@ -41,6 +41,9 @@ elif [[ $sys == Linux || $sys == FreeBSD ]]; then
   export VISUAL=nvim
   export EDITOR=$VISUAL
 
+  # Otherwise backspace can stop working across ssh within Ghostty
+  export TERM=vt100
+
   eval $(keychain --eval id_github_trojanfoe)
 fi
 
