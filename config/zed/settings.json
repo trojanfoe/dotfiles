@@ -9,8 +9,8 @@
 {
   "assistant": {
     "default_model": {
-      "provider": "openai",
-      "model": "gpt-4o"
+      "provider": "anthropic",
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2"
   },
@@ -18,6 +18,9 @@
   "buffer_font_size": 12,
   "buffer_font_features": {
     "calt": true
+  },
+  "features": {
+    "inline_completion_provider": "copilot"
   },
   "format_on_save": "on",
   "git": {
@@ -43,19 +46,16 @@
     "indent_size": 16
   },
   "restore_on_startup": "none",
+  "show_completions_on_input": true,
   "ssh_connections": [
     {
       "host": "linuxbox",
       "projects": [
         {
-          "paths": [
-            "/opt/EtsyStore"
-          ]
+          "paths": ["/opt/EtsyStore"]
         },
         {
-          "paths": [
-            "~/source/golang/learning_go/ch4"
-          ]
+          "paths": ["~/source/golang/learning_go/ch4"]
         }
       ]
     }
@@ -63,7 +63,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Visual Assist Dark"
+    "dark": "Ayu Mirage"
   },
   "ui_font_family": "Lucida Grande",
   "ui_font_size": 14
