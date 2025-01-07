@@ -63,7 +63,9 @@ if test -d $HOME/.cargo; then
 fi
 
 # Golang
-go env -w GOPATH=$HOME/.local/go
+if test -d $HOME/.local/go; then
+    go env -w GOPATH=$HOME/.local/go
+fi
 
 if test -f $HOME/.zprofile.local; then
     source $HOME/.zprofile.local
