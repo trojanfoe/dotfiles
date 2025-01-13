@@ -40,7 +40,8 @@
           "extraArgs": ["+nightly"]
         }
       }
-    }
+    },
+    "C++": {}
   },
   "project_panel": {
     "indent_size": 16
@@ -63,7 +64,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Mirage"
+    "dark": "Visual Assist Dark"
   },
   "ui_font_family": "Lucida Grande",
   "ui_font_size": 14
