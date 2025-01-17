@@ -6,7 +6,7 @@ sys=$(uname -s)
 mkdir $HOME/.config 2>/dev/null
 
 # Replace the entire directort
-config_dirs="nvim kitty"
+config_dirs="nvim ghostty"
 for d in $config_dirs; do
   dest=~/.config/$d
   if test -d $dest; then
