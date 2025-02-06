@@ -16,6 +16,7 @@
   },
   "buffer_font_family": "Hack Nerd Font Mono",
   "buffer_font_size": 12.5,
+  "buffer_font_weight": 500,
   "buffer_font_features": {
     "calt": true
   },
@@ -51,8 +52,9 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Mirage"
+    "dark": "Visual Assist Dark"
   },
-  "ui_font_family": "Lucida Grande",
-  "ui_font_size": 14
+  "ui_font_family": "Lato",
+  "ui_font_size": 14,
+  "ui_font_weight": 500
 }
