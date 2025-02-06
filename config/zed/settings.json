@@ -14,7 +14,7 @@
     },
     "version": "2"
   },
-  "buffer_font_family": "SF Mono",
+  "buffer_font_family": "Hack Nerd Font Mono",
   "buffer_font_size": 12.5,
   "buffer_font_features": {
     "calt": true
