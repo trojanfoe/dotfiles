@@ -14,6 +14,6 @@ for d in $config_dirs; do
   fi
   ln -sf $thisdir/config/$d $dest
 done
-s
+
 ln -sf $thisdir/zprofile ~/.zprofile
 ln -sf $thisdir/zshrc ~/.zshrc
