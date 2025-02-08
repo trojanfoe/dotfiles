@@ -21,13 +21,14 @@
     "calt": true
   },
   "features": {
-    "inline_completion_provider": "copilot"
+    "inline_completion_provider": "zed"
   },
   "format_on_save": "on",
   "git": {
     "git_gutter": "tracked_files",
     "inline_blame": { "enabled": false }
   },
+  "icon_theme": "Catppuccin Macchiato",
   "lsp": {
     "rust-analyzer": {
       "initialization_options": {
@@ -54,7 +55,7 @@
     "light": "One Light",
     "dark": "Visual Assist Dark"
   },
-  "ui_font_family": "Lato",
-  "ui_font_size": 16,
+  "ui_font_family": "Zed Plex Sans",
+  "ui_font_size": 14,
   "ui_font_weight": 500
 }
