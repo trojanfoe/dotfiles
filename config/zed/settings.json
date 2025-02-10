@@ -55,6 +55,19 @@
     "light": "One Light",
     "dark": "One Dark"
   },
+  "terminal": {
+    "font_family": "Hack Nerd Font Mono",
+    "font_size": 11.5,
+    "font_weight": 500,
+    "font_features": {
+      "calt": true
+    },
+    "line_height": "comfortable",
+    "toolbar": {
+      "breadcrumbs": true,
+      "button": true
+    }
+  },
   "ui_font_family": "Zed Plex Sans",
   "ui_font_size": 14,
   "ui_font_weight": 500
