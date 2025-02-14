@@ -28,7 +28,11 @@
     "git_gutter": "tracked_files",
     "inline_blame": { "enabled": false }
   },
-  "icon_theme": "Catppuccin Macchiato",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Catppuccin Macchiato"
+  },
   "lsp": {
     "rust-analyzer": {
       "initialization_options": {
