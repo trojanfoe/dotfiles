@@ -29,7 +29,22 @@
     "git_gutter": "tracked_files",
     "inline_blame": { "enabled": false }
   },
+  "languages": {
+    "Python": {
+      "language_servers": ["ruff"]
+    }
+  },
   "lsp": {
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lineLength": 100,
+          "lint": {
+            "extendSelect": ["I"]
+          }
+        }
+      }
+    },
     "rust-analyzer": {
       "initialization_options": {
         "check": {
@@ -60,7 +75,7 @@
     "dark": "Visual Assist Dark"
   },
   "terminal": {
-    "font_family": "Hack Nerd Font Mono",
+    "font_family": "FiraCode Nerd Font Mono",
     "font_size": 11.5,
     "font_weight": 500,
     "font_features": {
