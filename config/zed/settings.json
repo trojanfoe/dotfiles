@@ -15,7 +15,7 @@
     },
     "version": "2"
   },
-  "buffer_font_family": "MesloLGS Nerd Font Mono",
+  "buffer_font_family": "Hack Nerd Font Mono",
   "buffer_font_size": 12.5,
   "buffer_font_weight": 500,
   "buffer_font_features": {
@@ -73,9 +73,9 @@
     "dark": "Visual Assist Dark"
   },
   "terminal": {
-    "font_family": "MesloLGS Nerd Font Mono",
+    "font_family": "Hack Nerd Font Mono",
     "font_size": 11.5,
-    "font_weight": 500,
+    "font_weight": 400,
     "font_features": {
       "calt": true
     },
