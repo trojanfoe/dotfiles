@@ -31,17 +31,15 @@
   },
   "languages": {
     "Python": {
-      "language_servers": ["ruff"]
+      "language_servers": ["pyright"]
     }
   },
   "lsp": {
-    "ruff": {
-      "initialization_options": {
-        "settings": {
-          "lineLength": 100,
-          "lint": {
-            "extendSelect": ["I"]
-          }
+    "pyright": {
+      "settings": {
+        "python.analysis": {
+          "diagnosticMode": "workspace",
+          "typeCheckingMode": "off"
         }
       }
     },
