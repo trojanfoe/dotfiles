@@ -1,3 +1,7 @@
+zstyle :compinstall filename '/home/andy/.zshrc'
+
+autoload -Uz compinit
+compinit
 
 sys=$(uname -s)
 
@@ -62,17 +66,6 @@ if test -d $HOME/.cargo; then
   . "$HOME/.cargo/env"
 fi
 
-if test -f $HOME/.zprofile.local; then
-    source $HOME/.zprofile.local
-fi
-zstyle :compinstall filename '/home/andy/.zshrc'
-
-autoload -Uz compinit
-compinit
-
-eval "$(starship init zsh)"
-starship config command_timeout 1000
-
 if test -d $HOME/.aws; then
     function aws-export-dev-creds() {
         profile="dev"
@@ -84,3 +77,6 @@ if test -d $HOME/.aws; then
     }
     alias sso_login='aws sso login --profile dev && aws-export-dev-creds'
 fi
+
+eval "$(starship init zsh)"
+starship config command_timeout 1000
