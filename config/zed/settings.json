@@ -7,85 +7,95 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
-  "base_keymap": "VSCode",
-  "assistant": {
-    "default_model": {
-      "provider": "anthropic",
-      "model": "claude-3-5-sonnet-latest"
-    },
-    "version": "2"
-  },
-  "buffer_font_family": "Hack Nerd Font Mono",
-  "buffer_font_size": 12.5,
-  "buffer_font_weight": 500,
-  "buffer_font_features": {
-    "calt": true
-  },
-  "features": {
-    "edit_prediction_provider": "zed"
-  },
-  "format_on_save": "on",
-  "git": {
-    "git_gutter": "tracked_files",
-    "inline_blame": { "enabled": false }
-  },
-  "languages": {
-    "Python": {
-      "language_servers": ["pyright"]
-    }
-  },
-  "lsp": {
-    "pyright": {
-      "settings": {
-        "python.analysis": {
-          "diagnosticMode": "workspace",
-          "typeCheckingMode": "off"
-        }
-      }
-    },
-    "rust-analyzer": {
-      "initialization_options": {
-        "check": {
-          "command": "clippy"
+    "base_keymap": "VSCode",
+    "assistant": {
+        "default_model": {
+            "provider": "anthropic",
+            "model": "claude-3-5-sonnet-latest"
         },
-        "cfg": {
-          "setTest": true
+        "version": "2"
+    },
+    "buffer_font_family": "Hack Nerd Font Mono",
+    "buffer_font_size": 12.5,
+    "buffer_font_weight": 500,
+    "buffer_font_features": {
+        "calt": true
+    },
+    "features": {
+        "edit_prediction_provider": "zed"
+    },
+    "format_on_save": "on",
+    "git": {
+        "git_gutter": "tracked_files",
+        "inline_blame": { "enabled": false }
+    },
+    "languages": {
+        "CSS": {
+            "tab_size": 2
         },
-        "rustfmt": {
-          "extraArgs": ["+nightly"]
+        "HTML": {
+            "tab_size": 2
+        },
+        "JavaScript": {
+            "tab_size": 2
+        },
+        "Python": {
+            "language_servers": ["pyright"]
         }
-      }
     },
-    "clangd": {
-      "binary": {
-        "ignore_system_version": true
-      }
-    }
-  },
-  "project_panel": {
-    "indent_size": 16
-  },
-  "restore_on_startup": "none",
-  "show_completions_on_input": false,
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Visual Assist Dark"
-  },
-  "terminal": {
-    "font_family": "Hack Nerd Font Mono",
-    "font_size": 11.5,
-    "font_weight": 400,
-    "font_features": {
-      "calt": true
+    "lsp": {
+        "pyright": {
+            "settings": {
+                "python.analysis": {
+                    "diagnosticMode": "workspace",
+                    "typeCheckingMode": "off"
+                }
+            }
+        },
+        "rust-analyzer": {
+            "initialization_options": {
+                "check": {
+                    "command": "clippy"
+                },
+                "cfg": {
+                    "setTest": true
+                },
+                "rustfmt": {
+                    "extraArgs": ["+nightly"]
+                }
+            }
+        },
+        "clangd": {
+            "binary": {
+                "ignore_system_version": true
+            }
+        }
     },
-    "line_height": "comfortable",
-    "toolbar": {
-      "breadcrumbs": true,
-      "button": true
-    }
-  },
-  "ui_font_family": "Zed Plex Sans",
-  "ui_font_size": 15,
-  "ui_font_weight": 500
+    "project_panel": {
+        "indent_size": 16
+    },
+    "restore_on_startup": "none",
+    "show_completions_on_input": false,
+    "tab_size": 4,
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "Visual Assist Dark"
+    },
+    "terminal": {
+        "font_family": "Hack Nerd Font Mono",
+        "font_size": 11.5,
+        "font_weight": 400,
+        "font_features": {
+            "calt": true
+        },
+        "line_height": "comfortable",
+        "toolbar": {
+            "breadcrumbs": true,
+            "button": true
+        }
+    },
+    "ui_font_family": "Zed Plex Sans",
+    "ui_font_size": 15,
+    "ui_font_weight": 500
 }
