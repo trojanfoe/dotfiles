@@ -10,8 +10,8 @@
     "base_keymap": "VSCode",
     "assistant": {
         "default_model": {
-            "provider": "anthropic",
-            "model": "claude-3-5-sonnet-latest"
+            "provider": "zed.dev",
+            "model": "claude-3-7-sonnet-latest"
         },
         "version": "2"
     },
