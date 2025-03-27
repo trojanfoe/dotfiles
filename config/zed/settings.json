@@ -22,6 +22,9 @@
     "buffer_font_features": {
         "calt": true
     },
+    "edit_predictions": {
+        "mode": "subtle"
+    },
     "features": {
         "edit_prediction_provider": "zed"
     },
@@ -78,11 +81,6 @@
     "restore_on_startup": "none",
     "show_completions_on_input": false,
     "tab_size": 4,
-    "theme": {
-        "mode": "system",
-        "light": "One Light",
-        "dark": "Visual Assist Dark"
-    },
     "terminal": {
         "font_family": "Hack Nerd Font Mono",
         "font_size": 11.5,
@@ -95,6 +93,11 @@
             "breadcrumbs": true,
             "button": true
         }
+    },
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "Visual Assist Dark"
     },
     "ui_font_family": "Zed Plex Sans",
     "ui_font_size": 15,
