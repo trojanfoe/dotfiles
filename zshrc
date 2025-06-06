@@ -5,7 +5,7 @@ compinit
 
 sys=$(uname -s)
 
-for d in $HOME/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.local/go/bin /usr/local/go/bin
+for d in $HOME/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.docker/bin $HOME/.local/go/bin /usr/local/go/bin /opt/homebrew/opt/postgresql@17/bin
 do
   if test -d $d; then
     PATH=$d:$PATH
