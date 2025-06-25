@@ -76,6 +76,8 @@ if test -d $HOME/.aws; then
         aws configure set aws_session_token $(echo $creds | jq -r .SessionToken)
     }
     alias sso_login='aws sso login --profile dev && aws-export-dev-creds'
+
+    export GOPRIVATE="github.com/sailpoint/*"
 fi
 
 eval "$(starship init zsh)"
